@@ -50,7 +50,7 @@ def position_taken?(board, index)
     end
 end
 
-def move(board, index, token = "X")
+def move(board, index, token)
   board[index] = "#{token}"
 end
 
