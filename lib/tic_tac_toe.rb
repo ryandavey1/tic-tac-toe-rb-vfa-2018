@@ -89,7 +89,6 @@ def position_taken?(board, index)
     end
 end
 
-
 def won?(board)
   WIN_COMBINATIONS.each {|win_combination|
     win_index_0 = win_combination[0]
