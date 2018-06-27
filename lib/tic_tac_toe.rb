@@ -10,6 +10,26 @@ WIN_COMBINATIONS = [
   [2,4,6]
 ]
 
+def turn_count(board)
+  counter = 0
+  board.each do |spot|
+    if spot =="X" || spot == "O"
+      counter += 1
+    end
+  end
+  return counter
+end
+
+def current_player(board)
+  turns = turn_count(board)
+  if turns % 2 == 0
+    return "X"
+  else 
+    return "O"
+  end
+end
+
+
 def display_board(board)
   puts " #{board[0]} | #{board[1]} | #{board[2]} "
   puts "-----------"
